@@ -5,7 +5,7 @@
   </head>
   <body>
     <% @landmarks.each do |landmark| %>
-      <h4><%= landmark.name %></h4>
+      <h4><%= landmark.name %> - <%= landmark.year_completed %></h4>
     <% end %>
   </body>
 </html>

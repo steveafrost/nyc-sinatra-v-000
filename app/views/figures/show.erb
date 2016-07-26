@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Show Figure</title>
+  </head>
+  <body>
+    <h4>Figure Name: <%= @figure.name %></h4>
+    <h4>Titles</h4>
+      <% @figure.titles.each do |title| %>
+        <%= title.name %>
+      <% end %>
+    <h4>Landmarks</h4>
+      <% @figure.landmarks.each do |landmark| %>
+        <%= landmark.name %>
+      <% end %>
+  </body>
+</html>

@@ -5,13 +5,21 @@
   </head>
   <body>
     <h4>Figure Name: <%= @figure.name %></h4>
-    <h4>Titles</h4>
+
+    <label><b>Titles</b></label>
       <% @figure.titles.each do |title| %>
-        <%= title.name %>
+        <li><%= title.name %></li>
       <% end %>
-    <h4>Landmarks</h4>
+
+    <br />
+
+    <label><b>Landmarks</b></label>
       <% @figure.landmarks.each do |landmark| %>
-        <%= landmark.name %>
+        <li><%= landmark.name %></li>
       <% end %>
+
+    <br />
+
+    <a href="/figures/<%= @figure.id %>/edit"><input type="button" value="Edit This Figure"></a>
   </body>
 </html>
